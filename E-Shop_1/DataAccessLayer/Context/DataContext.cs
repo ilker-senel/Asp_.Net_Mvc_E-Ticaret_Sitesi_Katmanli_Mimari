@@ -8,6 +8,7 @@ using EntityLayer.Entities;
 using System.Configuration;
 using System.Runtime.Remoting.Contexts;
 using System.Data.Entity;
+using EntityLayer.Entity;
 
 namespace DataAccessLayer.Context
 {
@@ -20,5 +21,6 @@ namespace DataAccessLayer.Context
         public DbSet<Category> Categories { get; set; }
         public DbSet<Sales> Sales { get; set; }
         public DbSet<User> Users { get; set; }
+        public DbSet<Comment> Comments { get; set; }
     }
 }

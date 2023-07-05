@@ -8,7 +8,11 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="~/sidebar-07/css/style.css">
+    <link rel="stylesheet" href="~/sidebar-07/css/style.css"> 
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js"></script>
+    <link href="~/Content/PagedList.css" rel="stylesheet" />
+
 </head>
 <body>
 
@@ -17,10 +21,10 @@
             <h1><a href="index.html" class="logo">E</a></h1>
             <ul class="list-unstyled components mb-5">
                 <li class="active">
-                    <a href="#"><span class="fa fa-home"></span> Kategoriler</a>
+                    <a href="~/AdminCategory/Index"><span class="fa fa-home"></span> Kategoriler</a>
                 </li>
                 <li>
-                    <a href="#"><span class="fa fa-user"></span> Ürünler</a>
+                    <a href="~/AdminProduct/Index"><span class="fa fa-user"></span> Ürünler</a>
                 </li>
                 <li>
                     <a href="#"><span class="fa fa-sticky-note"></span> Kritik Stok</a>
@@ -31,10 +35,16 @@
                 <li>
                     <a href="#"><span class="fa fa-paper-plane"></span> Kullanıcılar</a>
                 </li>
+                <li>
+                    <a href="#"><span class="fa fa-paper-plane"></span> İstatistikler</a>
+                </li>
+                <li>
+                    <a href="/Admin/Comment"><span class="fa fa-paper-plane"></span> Yorumlar</a>
+                </li>
             </ul>
-            <li>
-                <a href="#"><span class="fa fa-paper-plane"></span> İstatistikler</a>
-            </li>
+            
+
+            
 
             <div class="footer">
                 <p>
@@ -79,10 +89,13 @@
             @RenderBody()
         </div>
     </div>
+    @*<script src="~/Scripts/jquery-1.8.3.min.js"></script>*@
 
-    <script src="~/sidebar-07/js/jquery.min.js"></script>
+
+    @*<script src="~/sidebar-07/js/jquery.min.js"></script>*@
     <script src="~/sidebar-07/js/popper.js"></script>
     <script src="~/sidebar-07/js/bootstrap.min.js"></script>
     <script src="~/sidebar-07/js/main.js"></script>
+
 </body>
 </html>

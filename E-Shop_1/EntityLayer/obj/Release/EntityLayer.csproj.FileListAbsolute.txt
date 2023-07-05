@@ -1,0 +1,12 @@
+C:\Users\DellPc\Desktop\Akay Yazılım\Asp_.Net_Mvc_E-Ticaret_sitesi\E-Shop_1\EntityLayer\bin\Release\EntityLayer.dll.config
+C:\Users\DellPc\Desktop\Akay Yazılım\Asp_.Net_Mvc_E-Ticaret_sitesi\E-Shop_1\EntityLayer\bin\Release\EntityLayer.dll
+C:\Users\DellPc\Desktop\Akay Yazılım\Asp_.Net_Mvc_E-Ticaret_sitesi\E-Shop_1\EntityLayer\bin\Release\EntityLayer.pdb
+C:\Users\DellPc\Desktop\Akay Yazılım\Asp_.Net_Mvc_E-Ticaret_sitesi\E-Shop_1\EntityLayer\bin\Release\EntityFramework.dll
+C:\Users\DellPc\Desktop\Akay Yazılım\Asp_.Net_Mvc_E-Ticaret_sitesi\E-Shop_1\EntityLayer\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\DellPc\Desktop\Akay Yazılım\Asp_.Net_Mvc_E-Ticaret_sitesi\E-Shop_1\EntityLayer\bin\Release\EntityFramework.xml
+C:\Users\DellPc\Desktop\Akay Yazılım\Asp_.Net_Mvc_E-Ticaret_sitesi\E-Shop_1\EntityLayer\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\DellPc\Desktop\Akay Yazılım\Asp_.Net_Mvc_E-Ticaret_sitesi\E-Shop_1\EntityLayer\obj\Release\EntityLayer.csproj.AssemblyReference.cache
+C:\Users\DellPc\Desktop\Akay Yazılım\Asp_.Net_Mvc_E-Ticaret_sitesi\E-Shop_1\EntityLayer\obj\Release\EntityLayer.csproj.CoreCompileInputs.cache
+C:\Users\DellPc\Desktop\Akay Yazılım\Asp_.Net_Mvc_E-Ticaret_sitesi\E-Shop_1\EntityLayer\obj\Release\EntityLayer.csproj.CopyComplete
+C:\Users\DellPc\Desktop\Akay Yazılım\Asp_.Net_Mvc_E-Ticaret_sitesi\E-Shop_1\EntityLayer\obj\Release\EntityLayer.dll
+C:\Users\DellPc\Desktop\Akay Yazılım\Asp_.Net_Mvc_E-Ticaret_sitesi\E-Shop_1\EntityLayer\obj\Release\EntityLayer.pdb

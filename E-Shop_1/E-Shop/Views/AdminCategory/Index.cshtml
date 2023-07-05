@@ -3,10 +3,11 @@
     ViewBag.Title = "Index";
 }
 
+
 <a class="btn btn-primary" href="/AdminCategory/Create">Kategori Ekle</a>
 <br />
 <br />
-<table class="table table-bordered">
+<table class="table table-bordered" id="table">
     <tr>
         <th>Ad</th>
         <th>Açıklama</th>
@@ -18,9 +19,48 @@
         <tr>
             <td>@item.Name</td>
             <td>@item.Description</td>
-            <td>@Html.ActionLink("Sil", "Delete", new { item.Id }, new { @class = "btn btn-danger", onclick = "return confirm ('Silmek istiyor musunuz?')" })</td>
+            @*<td>@Html.ActionLink("Sil", "Delete", new { item.Id }, new { @class = "btn btn-danger", onclick = "return confirm ('Silmek istiyor musunuz?')" })</td>*@
+            <td class="btn btn-danger btnSil" data-id="@item.Id">Sil</td>
             <td><a class="btn btn-primary" href="/AdminCategory/Update/@item.Id">Güncelle</a></td>
         </tr>
     }
 </table>
 
+
+
+<script type="text/javascript">
+    $(function () {
+        $("#table").on("click", ".btnSil", function () {
+            var btn = $(this);
+            bootbox.confirm({
+                message: "Silmek istediğinize emin misiniz?",
+                buttons: {
+                    confirm: {
+                        label: 'Evet',
+                        className: 'btn-danger'
+                    },
+                    cancel: {
+                        label: 'Hayır',
+                        className: 'btn-secondary'
+                    }
+                },
+                callback: function (result) {
+                    if (result) {
+                        var id = btn.data("id");
+                        $.ajax({
+                            type: "GET",
+                            url: "/AdminCategory/Delete/" + id,
+                            success: function () {
+                                btn.closest("tr").remove();
+                            }
+                        });
+                    } else {
+                        console.log("Silme işlemi iptal edildi.");
+                    }
+                }
+            });
+        });
+    });
+
+
+</script>

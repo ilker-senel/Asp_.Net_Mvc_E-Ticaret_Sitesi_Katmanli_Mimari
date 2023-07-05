@@ -11,8 +11,14 @@ namespace EntityLayer.Entities
     public class Product
     {
         public int Id { get; set; }
-        [Required(ErrorMessage = "Boş geçilemez.")]
-        [Display(Name = "Açıklama")]
+
+		[Required(ErrorMessage = "Boş geçilemez.")]
+		[Display(Name = "Açıklama")]
+		[StringLength(100, ErrorMessage = "Max 100 karakter olmalıdır.")]
+		public string Name { get; set; }
+
+		[Required(ErrorMessage = "Boş geçilemez.")]
+        [Display(Name = "Ad")]
         [StringLength(100, ErrorMessage = "Max 100 karakter olmalıdır.")]
         public string Description { get; set; }
 
@@ -36,13 +42,11 @@ namespace EntityLayer.Entities
         [Display(Name = "Resim")]
         public string Image { get; set; }
 
-        [Required(ErrorMessage = "Boş geçilemez.")]
-        [Display(Name = "Adet")]
-        public int Quantity { get; set; }
 
         [Required(ErrorMessage = "Boş geçilemez.")]
         [Display(Name = "Kategori")]
         public int CategoryId { get; set; }
         public virtual Category Category { get; set; }
+        public virtual List<Cart> Cart { get; set; }
     }
 }

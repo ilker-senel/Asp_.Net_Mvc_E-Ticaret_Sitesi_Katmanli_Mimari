@@ -52,6 +52,12 @@
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="PagedList, Version=1.17.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.1.17.0.0\lib\net40\PagedList.dll</HintPath>
+    </Reference>
+    <Reference Include="PagedList.Mvc, Version=4.5.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.Mvc.4.5.0.0\lib\net40\PagedList.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -112,7 +118,95 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="Content\image\sepet.png" />
+    <Content Include="Content\PagedList.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="eshop\404.html" />
+    <Content Include="eshop\blog-single.html" />
+    <Content Include="eshop\blog.html" />
+    <Content Include="eshop\cart.html" />
+    <Content Include="eshop\checkout.html" />
+    <Content Include="eshop\contact-us.html" />
+    <Content Include="eshop\css\animate.css" />
+    <Content Include="eshop\css\bootstrap.min.css" />
+    <Content Include="eshop\css\font-awesome.min.css" />
+    <Content Include="eshop\css\main.css" />
+    <Content Include="eshop\css\prettyPhoto.css" />
+    <Content Include="eshop\css\price-range.css" />
+    <Content Include="eshop\css\responsive.css" />
+    <Content Include="eshop\fonts\fontawesome-webfont.svg" />
+    <Content Include="eshop\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="eshop\images\404\404.png" />
+    <Content Include="eshop\images\blog\blog-one.jpg" />
+    <Content Include="eshop\images\blog\blog-three.jpg" />
+    <Content Include="eshop\images\blog\blog-two.jpg" />
+    <Content Include="eshop\images\blog\man-four.jpg" />
+    <Content Include="eshop\images\blog\man-one.jpg" />
+    <Content Include="eshop\images\blog\man-three.jpg" />
+    <Content Include="eshop\images\blog\man-two.jpg" />
+    <Content Include="eshop\images\blog\socials.png" />
+    <Content Include="eshop\images\cart\one.png" />
+    <Content Include="eshop\images\cart\three.png" />
+    <Content Include="eshop\images\cart\two.png" />
+    <Content Include="eshop\images\home\bg_border.png" />
+    <Content Include="eshop\images\home\gallery1.jpg" />
+    <Content Include="eshop\images\home\gallery2.jpg" />
+    <Content Include="eshop\images\home\gallery3.jpg" />
+    <Content Include="eshop\images\home\gallery4.jpg" />
+    <Content Include="eshop\images\home\girl1.jpg" />
+    <Content Include="eshop\images\home\girl2.jpg" />
+    <Content Include="eshop\images\home\girl3.jpg" />
+    <Content Include="eshop\images\home\iframe1.png" />
+    <Content Include="eshop\images\home\iframe2.png" />
+    <Content Include="eshop\images\home\iframe3.png" />
+    <Content Include="eshop\images\home\iframe4.png" />
+    <Content Include="eshop\images\home\logo.png" />
+    <Content Include="eshop\images\home\map.png" />
+    <Content Include="eshop\images\home\new.png" />
+    <Content Include="eshop\images\home\partner1.png" />
+    <Content Include="eshop\images\home\partner2.png" />
+    <Content Include="eshop\images\home\partner3.png" />
+    <Content Include="eshop\images\home\partner4.png" />
+    <Content Include="eshop\images\home\pricing.png" />
+    <Content Include="eshop\images\home\product1.jpg" />
+    <Content Include="eshop\images\home\product2.jpg" />
+    <Content Include="eshop\images\home\product3.jpg" />
+    <Content Include="eshop\images\home\product4.jpg" />
+    <Content Include="eshop\images\home\product5.jpg" />
+    <Content Include="eshop\images\home\product6.jpg" />
+    <Content Include="eshop\images\home\recommend1.jpg" />
+    <Content Include="eshop\images\home\recommend2.jpg" />
+    <Content Include="eshop\images\home\recommend3.jpg" />
+    <Content Include="eshop\images\home\sale.png" />
+    <Content Include="eshop\images\home\searchicon.png" />
+    <Content Include="eshop\images\home\shipping.jpg" />
+    <Content Include="eshop\images\product-details\1.jpg" />
+    <Content Include="eshop\images\product-details\new.jpg" />
+    <Content Include="eshop\images\product-details\rating.png" />
+    <Content Include="eshop\images\product-details\share.png" />
+    <Content Include="eshop\images\product-details\similar1.jpg" />
+    <Content Include="eshop\images\product-details\similar2.jpg" />
+    <Content Include="eshop\images\product-details\similar3.jpg" />
+    <Content Include="eshop\images\shop\advertisement.jpg" />
+    <Content Include="eshop\images\shop\product10.jpg" />
+    <Content Include="eshop\images\shop\product11.jpg" />
+    <Content Include="eshop\images\shop\product12.jpg" />
+    <Content Include="eshop\images\shop\product7.jpg" />
+    <Content Include="eshop\images\shop\product8.jpg" />
+    <Content Include="eshop\images\shop\product9.jpg" />
+    <Content Include="eshop\index.html" />
+    <Content Include="eshop\js\bootstrap.min.js" />
+    <Content Include="eshop\js\contact.js" />
+    <Content Include="eshop\js\gmaps.js" />
+    <Content Include="eshop\js\html5shiv.js" />
+    <Content Include="eshop\js\jquery.js" />
+    <Content Include="eshop\js\jquery.prettyPhoto.js" />
+    <Content Include="eshop\js\jquery.scrollUp.min.js" />
+    <Content Include="eshop\js\main.js" />
+    <Content Include="eshop\js\price-range.js" />
+    <Content Include="eshop\login.html" />
+    <Content Include="eshop\product-details.html" />
+    <Content Include="eshop\shop.html" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -138,12 +232,19 @@
     <Compile Include="Abstract\GenericRepository.cs" />
     <Compile Include="Abstract\IRepository.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AdminCategoryController.cs" />
     <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\AdminProductController.cs" />
+    <Compile Include="Controllers\CartController.cs" />
+    <Compile Include="Controllers\CategoryController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Roller\AdminRolProvider.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
@@ -163,9 +264,12 @@
     <Content Include="Content\bootstrap-grid.rtl.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="eshop\fonts\fontawesome-webfont.woff" />
+    <Content Include="eshop\fonts\FontAwesome.otf" />
+    <Content Include="eshop\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="eshop\sendemail.php" />
     <None Include="packages.config" />
     <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Shared\_AdminLayout.cshtml" />
     <Content Include="Views\Admin\Index.cshtml" />
     <Content Include="sidebar-07\.DS_Store" />
     <Content Include="sidebar-07\css\.DS_Store" />
@@ -275,6 +379,20 @@
     <Content Include="Scripts\bootstrap.bundle.min.js.map" />
     <Content Include="Scripts\bootstrap.bundle.js.map" />
     <Content Include="Views\AdminCategory\Update.cshtml" />
+    <Content Include="Views\Shared\_AdminLayout.cshtml" />
+    <Content Include="Views\AdminProduct\Index.cshtml" />
+    <Content Include="Views\AdminProduct\Create.cshtml" />
+    <Content Include="Views\AdminProduct\Update.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Category\CategoryList.cshtml" />
+    <Content Include="Views\Product\PopularProduct.cshtml" />
+    <Content Include="Views\Category\Details.cshtml" />
+    <Content Include="Views\Product\ProductDetails.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Admin\Comment.cshtml" />
+    <Content Include="Views\Cart\Index.cshtml" />
+    <Content Include="Views\Cart\TotalCount.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -284,11 +402,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BusinessLayer\BusinessLayer.csproj">
-      <Project>{d997b4a0-cf49-4e06-9243-215064778ae7}</Project>
+      <Project>{0e4be540-0b5a-416b-89f8-2390d63e991f}</Project>
       <Name>BusinessLayer</Name>
     </ProjectReference>
     <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj">
@@ -296,7 +413,7 @@
       <Name>DataAccessLayer</Name>
     </ProjectReference>
     <ProjectReference Include="..\EntityLayer\EntityLayer.csproj">
-      <Project>{9fca2d36-cc4d-4bb9-8b2d-967872cffb09}</Project>
+      <Project>{a385292f-9d80-44f2-9353-f0b7bf774daa}</Project>
       <Name>EntityLayer</Name>
     </ProjectReference>
   </ItemGroup>
