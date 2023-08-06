@@ -13,14 +13,15 @@ using PagedList;
 
 namespace E_Shop.Controllers
 {
+	[Authorize(Roles = "Admin")]
 	public class AdminProductController : Controller
 	{
 		// GET: AdminProduct
 		ProductRepository productRepository = new ProductRepository();
 		DataContext db = new DataContext();
-		public ActionResult Index(int sayfa=1)
+		public ActionResult Index(int sayfa = 1)
 		{
-			return View(productRepository.List().ToPagedList(sayfa,3));
+			return View(productRepository.List().ToPagedList(sayfa, 3));
 		}
 		public ActionResult Create()
 		{
@@ -53,7 +54,7 @@ namespace E_Shop.Controllers
 			productRepository.Delete(delete);
 			return RedirectToAction("Index");
 		}
-		
+
 		public ActionResult Update(int id)
 		{
 			List<SelectListItem> deger1 = (from i in db.Categories.ToList()
@@ -117,10 +118,27 @@ namespace E_Shop.Controllers
 
 				;
 			}
-			
 
-			ModelState.AddModelError("","bir hata oluştu");
+
+			ModelState.AddModelError("", "bir hata oluştu");
 			return Update(data.Id);
 		}
+		public ActionResult CriticalStock()
+		{
+			var kritik = db.Products.Where(x => x.Stok <= 50).ToList();
+			return View(kritik);
+		}
+		public PartialViewResult StockCount()
+		{
+			if (User.Identity.IsAuthenticated)
+			{
+				var count = db.Products.Where(x => x.Stok < 50).Count();
+				ViewBag.Count = count;
+				var azalan = db.Products.Where(x => x.Stok == 50).Count();
+				ViewBag.Azalan = azalan;
+			}//dk7.16
+			return PartialView();
+		}
+
 	}
 }

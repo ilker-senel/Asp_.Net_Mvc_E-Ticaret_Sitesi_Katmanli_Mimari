@@ -68,7 +68,7 @@
                             <ul class="nav navbar-nav">
                                 @if (User.Identity.IsAuthenticated)
                                 {
-                                    <li><a href=""><i class="fa fa-user"></i> @Session["Ad"] @Session["Soyad"]</a></li>
+                                    <li><a href="/User/Update"><i class="fa fa-user"></i> @Session["Ad"] @Session["Soyad"]</a></li>
 
 
                                 
@@ -86,7 +86,7 @@
 
                                 @if (User.IsInRole("Admin"))
                                 {
-                                    <li><a href="/Admin/Index"><i class="fa fa-lock"></i> Admin Paneli</a></li>
+                                    <li><a href="/Admin/Index" target="_blank"><i class="fa fa-lock"></i> Admin Paneli</a></li>
                                 }
 
 
@@ -200,8 +200,8 @@
         <div class="footer-bottom">
             <div class="container">
                 <div class="row">
-                    <p class="pull-left">Copyright © 2021. Tüm Hakları Sakldır.</p>
-                    <p class="pull-right">Designed by <span style="color:#f14a0b">Gökay KALKAN</span></p>
+                    <p class="pull-left">Copyright © 2023. Tüm Hakları Sakldır.</p>
+                    <p class="pull-right">Designed by <span style="color:#f14a0b">İlker Şenel</span></p>
                 </div>
             </div>
         </div>

@@ -11,8 +11,8 @@ namespace BusinessLayer.Concrete
 {
     public class ProductRepository : GenericRepository<Product>
     {
-        DataContext db=new DataContext();   
-       public List<Product> GetPopularProduct()
+        DataContext db = new DataContext();
+        public List<Product> GetPopularProduct()
         {
             return db.Products.Where(x => x.Popular == true).Take(3).ToList();
         }

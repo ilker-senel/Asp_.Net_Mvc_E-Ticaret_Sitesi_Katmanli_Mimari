@@ -8,7 +8,7 @@
                 @foreach (var item in Model)
                 {
                     <ul class="nav nav-pills nav-stacked">
-                        <li><a href="/Category/Details//@item.Id"><span class="pull-right">(@item.Products.Count)</span>@item.Name</a></li>
+                        <li><a href="/Category/Details/@item.Id/#container1"><span class="pull-right">(@item.Products.Count)</span>@item.Name</a></li>
                     </ul>
                 }
             </div>

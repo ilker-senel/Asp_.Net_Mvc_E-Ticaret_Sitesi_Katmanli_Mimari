@@ -21,6 +21,7 @@ namespace E_Shop.Controllers
 
             return PartialView();
         }
+        [Route("Product/ProductDetails/{id}/{name}")]
         public ActionResult ProductDetails(int id)
         {
             var details = productRepository.GetById(id);

@@ -13,9 +13,9 @@
         <th>Açıklama</th>
         <th>Fiyat</th>
         <th>Stok</th>
+        <th>Kategori</th>
         <th>Popüler</th>
         <th>Onay</th>
-        <th>Kategori</th>
         <th>Resim</th>
         <th>Sil</th>
         <th>Güncelle</th>
@@ -48,7 +48,7 @@
                     <label class="btn btn-danger">Hayır</label>
                 }
             </td>
-            <td><img src="~/Content/image/@item.Image" width="80" height="80" />Resim</td>
+            <td><img src="~/Content/image/@item.Image" style="width:80px;height:80px" /></td>
             <td>@item.Category.Name</td>
             <td>@Html.ActionLink("Sil", "Delete", new { item.Id }, new { @class = "btn btn-danger", onclick = "return confirm ('Silmek istiyor musunuz?')" })</td>
             <td><a class="btn btn-primary" href="/AdminProduct/Update/@item.Id">Güncelle</a></td>
@@ -57,4 +57,4 @@
     }
 </table>
 <br />
-@Html.PagedListPager(Model,sayfa=>Url.Action("Index",new {sayfa}),PagedListRenderOptions.Classic)
+@Html.PagedListPager(Model, sayfa => Url.Action("Index", new { sayfa }), PagedListRenderOptions.Classic)

@@ -8,7 +8,8 @@ using System.Web.Mvc;
 
 namespace E_Shop.Controllers
 {
-    public class AdminCategoryController : Controller
+	[Authorize(Roles = "Admin")]
+	public class AdminCategoryController : Controller
     {
         CategoryRepository categoryRepository = new CategoryRepository();
         // GET: AdminCategory

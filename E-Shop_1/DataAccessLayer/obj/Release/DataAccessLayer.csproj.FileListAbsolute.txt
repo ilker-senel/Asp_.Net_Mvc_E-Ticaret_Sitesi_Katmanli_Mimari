@@ -15,3 +15,6 @@ C:\Users\DellPc\Desktop\Akay Yazılım\Asp_.Net_Mvc_E-Ticaret_sitesi\E-Shop_1\Da
 C:\Users\DellPc\Desktop\Akay Yazılım\Asp_.Net_Mvc_E-Ticaret_sitesi\E-Shop_1\DataAccessLayer\obj\Release\DataAccessLayer.pdb
 C:\Users\DellPc\Desktop\Akay Yazılım\Asp_.Net_Mvc_E-Ticaret_sitesi\E-Shop_1\DataAccessLayer\obj\Release\DataAccessLayer.Migrations.mig1.resources
 C:\Users\DellPc\Desktop\Akay Yazılım\Asp_.Net_Mvc_E-Ticaret_sitesi\E-Shop_1\DataAccessLayer\obj\Release\DataAccessLayer.csproj.GenerateResource.cache
+C:\Users\DellPc\Desktop\Akay Yazılım\Asp_.Net_Mvc_E-Ticaret_sitesi\E-Shop_1\DataAccessLayer\obj\Release\DataAccessLayer.Migrations.mig2.resources
+C:\Users\DellPc\Desktop\Akay Yazılım\Asp_.Net_Mvc_E-Ticaret_sitesi\E-Shop_1\DataAccessLayer\obj\Release\DataAccessLayer.Migrations.Sales_Update.resources
+C:\Users\DellPc\Desktop\Akay Yazılım\Asp_.Net_Mvc_E-Ticaret_sitesi\E-Shop_1\DataAccessLayer\obj\Release\DataAccessLayer.Migrations.user_update.resources

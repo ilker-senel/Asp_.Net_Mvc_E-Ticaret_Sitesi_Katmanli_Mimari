@@ -7,6 +7,7 @@
 @using PagedList;
 @using PagedList.Mvc;
 @model IPagedList<EntityLayer.Entities.Product>
+@using E_Shop.SeoUrl
 <section id="slider">
     <!--slider-->
     <div class="container">
@@ -23,8 +24,8 @@
                         <div class="item active">
                             <div class="col-sm-6">
                                 <h1><span>E</span>-SHOPPER</h1>
-                                <h2>Free E-Commerce Template</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                                <h2>E-Ticaret Sitesi Uygulaması</h2>
+                                <p>Bu proje ile Asp.Net Mvc teknolojisi kullanılarak demo bir e-ticaret websitesi tasarımı yapılmıştır. Proje katmanlı mimariye sahiptir.</p>
                                 <button type="button" class="btn btn-default get">Get it now</button>
                             </div>
                             <div class="col-sm-6">
@@ -35,8 +36,8 @@
                         <div class="item">
                             <div class="col-sm-6">
                                 <h1><span>E</span>-SHOPPER</h1>
-                                <h2>100% Responsive Design</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                                <h2>Asp.Net Mvc Katmanlı Mimari ile websitesi projesi</h2>
+                                <p>Bu proje ile Asp.Net Mvc teknolojisi kullanılarak demo bir e-ticaret websitesi tasarımı yapılmıştır. Proje katmanlı mimariye sahiptir.</p>
                                 <button type="button" class="btn btn-default get">Get it now</button>
                             </div>
                             <div class="col-sm-6">
@@ -48,8 +49,8 @@
                         <div class="item">
                             <div class="col-sm-6">
                                 <h1><span>E</span>-SHOPPER</h1>
-                                <h2>Free Ecommerce Template</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                                <h2>Alışveriş Sitesi</h2>
+                                <p>Bu proje ile Asp.Net Mvc teknolojisi kullanılarak demo bir e-ticaret websitesi tasarımı yapılmıştır. Proje katmanlı mimariye sahiptir.</p>
                                 <button type="button" class="btn btn-default get">Get it now</button>
                             </div>
                             <div class="col-sm-6">
@@ -74,11 +75,12 @@
 </section><!--/slider-->
 
 <section>
-    <div class="container">
+    <div class="container" id="container1">
         <div class="row">
-       
-                @Html.Action("CategoryList", "Category")
-          
+
+            @Html.Action("CategoryList", "Category")
+    
+
 
             <div class="col-sm-9 padding-right">
 
@@ -92,10 +94,10 @@
                                 <div class="single-products">
                                     <div class="productinfo text-center">
 
-                                        <a href="/Product/ProductDetails/@item.Id"><img src="~/Content/Image/@item.Image" width="65" height="110" alt="" /></a>
+                                        <a href="/Product/ProductDetails/@item.Id/@(Seo.AdresDuzenle(item.Name))"><img src="~/Content/Image/@item.Image" width="65" height="110" alt="" /></a>
                                         <h2>@item.Price</h2>
                                         <p>@item.Name</p>
-                                        <a href="/Product/ProductDetails/@item.Id" class="btn btn-default add-to-cart">Ürün Detay</a>
+                                        <a href="/Product/ProductDetails/@item.Id/@(Seo.AdresDuzenle(item.Name))" class="btn btn-default add-to-cart">Ürün Detay</a>
                                     </div>
 
                                 </div>
@@ -104,7 +106,7 @@
                         </div>
                     }
 
-                    @Html.PagedListPager(Model, sayfa => Url.Action("Index", new { sayfa }), PagedListRenderOptions.Classic)
+                    @Html.PagedListPager(Model, sayfa => Url.Action("Index", new { sayfa }) + "#container1", PagedListRenderOptions.Classic)
 
 
 

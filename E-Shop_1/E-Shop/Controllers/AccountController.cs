@@ -25,6 +25,7 @@ namespace E_Shop.Controllers
 			{
 				FormsAuthentication.SetAuthCookie(bilgiler.Email, false);
 				Session["Mail"] = bilgiler.Email.ToString();
+				Session["Ad"] = bilgiler.Name.ToString();
 				Session["Soyad"] = bilgiler.SurName.ToString();
 				Session["Userid"] = bilgiler.Id.ToString();
 				return RedirectToActionPermanent("Index", "Home");

@@ -71,7 +71,7 @@
 </section><!--/slider-->
 
 <section>
-    <div class="container">
+    <div class="container" id="container1">
         <div class="row">
 
             @Html.Action("CategoryList", "Category")
@@ -89,10 +89,10 @@
                                 <div class="single-products">
                                     <div class="productinfo text-center">
 
-                                        <a href="/Product/ProductDetails/@item.Id"><img src="~/Content/Image/@item.Image" width="65" height="110" alt="" /></a>
+                                        <a href="/Product/ProductDetails/@item.Id/@item.Name"><img src="~/Content/Image/@item.Image" width="65" height="110" alt="" /></a>
                                         <h2>@item.Price</h2>
                                         <p>@item.Name</p>
-                                        <a href="/Product/ProductDetails/@item.Id" class="btn btn-default add-to-cart">Ürün Detay</a>
+                                        <a href="/Product/ProductDetails/@item.Id/@item.Name" class="btn btn-default add-to-cart">Ürün Detay</a>
                                     </div>
 
                                 </div>

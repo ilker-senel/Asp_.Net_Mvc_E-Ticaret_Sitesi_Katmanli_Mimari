@@ -22,10 +22,10 @@ namespace EntityLayer.Entities
         [StringLength(50, ErrorMessage = "Max 50 karakter olmalıdır.")]
         public string SurName { get; set; }
 
-        [Required(ErrorMessage = "Boş geçilemez.")]
-        [Display(Name = "E-Posta")]
-        [StringLength(50, ErrorMessage = "Max 50 karakter olmalıdır.")]
-        [EmailAddress(ErrorMessage = "E-mail formatı şeklinde giriniz.")]
+        //[Required(ErrorMessage = "Boş geçilemez.")]
+        //[Display(Name = "E-Posta")]
+        //[StringLength(50, ErrorMessage = "Max 50 karakter olmalıdır.")]
+        //[EmailAddress(ErrorMessage = "E-mail formatı şeklinde giriniz.")]
         public string Email { get; set; }
 
         [Required(ErrorMessage = "Boş geçilemez.")]
@@ -33,17 +33,17 @@ namespace EntityLayer.Entities
         [StringLength(50, ErrorMessage = "Max 50 karakter olmalıdır.")]
         public string UserName { get; set; }
 
-        [Required(ErrorMessage = "Boş geçilemez.")]
-        [Display(Name = "Şifre")]
-        [StringLength(10, ErrorMessage = "Max 10 karakter olmalıdır.")]
-        [DataType(DataType.Password)]
+        //[Required(ErrorMessage = "Boş geçilemez.")]
+        //[Display(Name = "Şifre")]
+        //[StringLength(10, ErrorMessage = "Max 10 karakter olmalıdır.")]
+        //[DataType(DataType.Password)]
         public string Password { get; set; }
 
-        [Required(ErrorMessage = "Boş geçilemez.")]
-        [Display(Name = "Şifre")]
-        [StringLength(10, ErrorMessage = "Max 10 karakter olmalıdır.")]
-        [DataType(DataType.Password)]
-        [Compare("Password", ErrorMessage = "Şifreler uyuşmuyor")]
+        //[Required(ErrorMessage = "Boş geçilemez.")]
+        //[Display(Name = "Şifre")]
+        //[StringLength(10, ErrorMessage = "Max 10 karakter olmalıdır.")]
+        //[DataType(DataType.Password)]
+        //[Compare("Password", ErrorMessage = "Şifreler uyuşmuyor")]
         public string RePassword { get; set; }
 
         [StringLength(10, ErrorMessage = "Max 10 karakter olmalıdır.")]

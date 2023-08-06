@@ -1,0 +1,74 @@
+﻿@{
+    ViewBag.Title = "Index";
+
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+
+
+
+
+<div class="total-content" style="text-align:center;">
+    <div class="list_of_members">
+        <div class=" col-md-3">
+            <div class="sales" style="background-color:#1abc9c">
+                <div class="icon-text">
+                    <h3 style="color:white">@ViewBag.satis</h3>
+                    <p style="color:white">Toplam Satışlar</p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+        <div class="col-md-3" style="text-align:center;">
+            <div class="new-users" style="background-color:#2ecc71">
+
+                <div class="icon-text">
+                    <h3 style="color:white">@ViewBag.urun</h3>
+                    <p style="color:white">Ürün Sayısı</p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+        <div class="col-md-3" style="text-align:center;">
+            <div class="orders" style="background-color:#3498db">
+
+                <div class="icon-text">
+                    <h3 style="color:white">@ViewBag.kategori</h3>
+                    <p style="color:white">Kategori Sayısı</p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+        <div class="col-md-3" style="text-align:center;">
+            <div class="visitors" style="background-color:#9b59b6">
+
+                <div class="icon-text">
+                    <h3 style="color:white">@ViewBag.sepet</h3>
+                    <p style="color:white">Sepet Sayısı</p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+        <br />
+        <div class="col-md-3" style="text-align:center;">
+            <div class="visitors" style="background-color:#ff6a00; margin-top:10px">
+
+                <div class="icon-text">
+                    <h3 style="color:white">@ViewBag.kullanici</h3>
+                    <p style="color:white">Kullanıcı Sayısı</p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+    </div>
+</div>
+<div class="clearfix"></div>
+
+
